@@ -1,0 +1,10 @@
+{{page-title "Promo"}}
+<div class="">
+  <p>Page promo</p>
+  <Input type="text" class="form-control" @value={{@model.enterValue }}/>
+  <p>Prix après réduction : </p>
+  <button {{action "valider"}}>Appliquer</button>
+  <p>Remise : {{@model.remise}}</p>
+  <p>Total avec remise : {{@model.totalAvecRemise}}</p>
+</div>
+{{outlet}}
