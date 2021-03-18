@@ -1,5 +1,7 @@
-import Model from '@ember-data/model';
+import Model, { attr, belongsTo } from '@ember-data/model';
 
 export default class OrderdetailModel extends Model {
-
+  @attr('number') quantity;
+  @belongsTo('product') product;
+  @belongsTo('order') order;
 }
